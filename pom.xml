@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>running-sum-of-1d-array</module>
+        <module>find-pivot-index</module>
     </modules>
 
     <properties>
