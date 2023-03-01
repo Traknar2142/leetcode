@@ -5,12 +5,12 @@ public class SolutionTest {
 
     @Test
     void test() {
-        ListNode listNode = convertToListNode(new int[]{3,5,6,1,4,2});
+        ListNode listNode = convertToListNode(new int[]{-1,5,3,4,0});
         ListNode actual = new Solution().insertionSortList(listNode);
-        int[] expected = new int[]{1,2,3,4,5,6};
-        int[] actualArray = convertToIntArray(actual);
+        String expected = "-1,0,3,4,5,";
+        String actualStr = convertToIntString(actual);
 
-        Assertions.assertEquals(expected,actualArray);
+        Assertions.assertEquals(expected,actualStr);
     }
 
     private ListNode convertToListNode(int[] arr) {
@@ -27,16 +27,17 @@ public class SolutionTest {
         return head;
     }
 
-    private int[] convertToIntArray(ListNode listNode) {
+    private String convertToIntString(ListNode listNode) {
         int countOfNodes = getContOfNodes(listNode);
         int[] arr = new int[countOfNodes];
         ListNode currentNode = listNode;
         ListNode nextNode;
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = currentNode.val;
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < countOfNodes; i++) {
+            sb.append(currentNode.val).append(",");
             currentNode = currentNode.next;
         }
-        return arr;
+        return sb.toString();
     }
 
     private int getContOfNodes(ListNode listNode) {
