@@ -13,6 +13,7 @@
         <module>find-pivot-index</module>
         <module>contains-duplicate</module>
         <module>isomorphic-strings</module>
+        <module>height-checker</module>
     </modules>
 
     <properties>
