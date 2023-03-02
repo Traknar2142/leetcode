@@ -15,6 +15,7 @@
         <module>isomorphic-strings</module>
         <module>height-checker</module>
         <module>insertion-sort-list</module>
+        <module>palindrome-number</module>
     </modules>
 
     <properties>
