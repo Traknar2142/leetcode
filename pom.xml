@@ -18,6 +18,7 @@
         <module>palindrome-number</module>
         <module>longest-common-prefix</module>
         <module>heap-implementation</module>
+        <module>heapify-example</module>
     </modules>
 
     <properties>
