@@ -19,6 +19,7 @@
         <module>longest-common-prefix</module>
         <module>heap-implementation</module>
         <module>heapify-example</module>
+        <module>kth-largest-element-in-an-array</module>
     </modules>
 
     <properties>
