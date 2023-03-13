@@ -20,6 +20,7 @@
         <module>heap-implementation</module>
         <module>heapify-example</module>
         <module>kth-largest-element-in-an-array</module>
+        <module>top-k-frequent-elements</module>
     </modules>
 
     <properties>
