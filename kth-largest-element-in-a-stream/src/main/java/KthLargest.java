@@ -7,7 +7,7 @@ class KthLargest {
 
     public KthLargest(int k, int[] nums) {
         this.queue = new PriorityQueue<>();
-        this.heapSize = k;
+        heapSize = k;
         for (int el: nums){
             queue.offer(el);
         }
